@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Contact | Web Design Mastery</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+      .form-container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 2rem;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .form-group {
+        margin-bottom: 1.5rem;
+      }
+
+      .form-group label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: var(--text-dark);
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid var(--text-light);
+        border-radius: 4px;
+        font-family: inherit;
+        font-size: 1rem;
+        color: var(--text-dark);
+      }
+
+      .form-group textarea {
+        resize: vertical;
+        min-height: 150px;
+      }
+
+      .send-button {
+        display: inline-block;
+        background-color: var(--primary-color);
+        color: #fff;
+        font-weight: 600;
+        padding: 0.75rem 1.5rem;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .send-button:hover {
+        background-color: var(--primary-color-dark);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__content">
+        <div class="logo"><a href="#">Sabbir Ahmed</a></div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="section">
+      <div class="section__container">
+        <div class="content">
+          <h1 class="title">Contact Me</h1>
+          <p class="description">
+            I would love to hear from you! Feel free to reach out to me using
+            the contact details below.
+          </p>
+          <div class="contact__details">
+            <div class="contact__item">
+              <i class="ri-mail-line"></i>
+              <p>Email: msa29.cse@gmail.com</p>
+            </div>
+            <div class="contact__item">
+              <i class="ri-phone-line"></i>
+              <p>Phone: +880 01990607209</p>
+            </div>
+            <div class="contact__item">
+              <i class="ri-map-pin-line"></i>
+              <p>Address: Velanagar, Narshingdi city, Narshingdi, Bangladesh</p>
+            </div>
+          </div>
+        </div>
+        <div class="image">
+          <img
+            src="assets\WhatsApp Image 2023-08-02 at 10.54.16.jpg"
+            alt="profile"
+          />
+        </div>
+      </div>
+      <div class="form-container">
+        <h2 class="form__title">Leave a Note</h2>
+        <form action="submit_note.php" method="POST">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="note">Note:</label>
+            <textarea
+              id="note"
+              name="note"
+              placeholder="Write your note here..."
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <button class="send-button" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

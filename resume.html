@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Resume | Web Design Mastery</title>
+    <style>
+      .education-table,
+      .certification-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 2rem;
+      }
+
+      .education-table th,
+      .education-table td,
+      .certification-table th,
+      .certification-table td {
+        padding: 1rem;
+        text-align: left;
+        border-bottom: 1px solid var(--text-light);
+      }
+
+      .education-table th,
+      .certification-table th {
+        background-color: var(--primary-color);
+        color: #fff;
+        font-weight: 600;
+      }
+
+      .education-table tr:nth-child(even),
+      .certification-table tr:nth-child(even) {
+        background-color: var(--extra-light);
+      }
+
+      .education-table td:first-child,
+      .certification-table td:first-child {
+        font-weight: 600;
+      }
+
+      .education-table td:last-child,
+      .certification-table td:last-child {
+        color: var(--text-light);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__content">
+        <div class="logo"><a href="#">Sabbir Ahmed</a></div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="section">
+      <div class="section__container">
+        <div class="content">
+          <h2 class="title">Education Background</h2>
+          <table class="education-table">
+            <thead>
+              <tr>
+                <th>Degree/Certificate</th>
+                <th>Institution</th>
+                <th>Duration</th>
+                <th>Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>BSc in Computer Science And Engineering</td>
+                <td>Green University of Bangladesh, Narayanganj, Bangladesh</td>
+                <td>Feb 2022 - Current</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Higher Secondary School Certificate Examination</td>
+                <td>Govt. Tolaram College, Narayanganj, Bangladesh</td>
+                <td>Jul 2018 - Apr 2020</td>
+                <td>
+                  <ul>
+                    <li>Passed with Distinction (GPA: 4.91 on a scale of 5)</li>
+                    <li>Specialised in Physics, Chemistry, Maths</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Secondary School Certificate Examination</td>
+                <td>Agradut Bidyanikaton High School, Dhaka, Bangladesh</td>
+                <td>Jan 2016 - Feb 2017</td>
+                <td>
+                  <ul>
+                    <li>Passed with Distinction (GPA 4.89 on a scale of 5)</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Junior School Certificate Examination</td>
+                <td>Agradut Bidyanikaton High School, Dhaka, Bangladesh</td>
+                <td>Nov 2015</td>
+                <td>
+                  <ul>
+                    <li>Passed with Distinction (GPA 4.70 on a scale of 5)</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Primary School Certificate Examination</td>
+                <td>Tudshardhara High School & College, Dhaka, Bangladesh</td>
+                <td>Nov 2012</td>
+                <td>
+                  <ul>
+                    <li>Passed with Distinction (GPA 5 on a scale of 5)</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2 class="title">Professional Certifications</h2>
+          <table class="certification-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Instructor</th>
+                <th>Platform</th>
+                <th>Skills</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Google Data Analytics Professional Certificate</td>
+                <td>Mar 2024</td>
+                <td>Google</td>
+                <td>Coursera (Online)</td>
+                <td>
+                  <ul>
+                    <li>Data cleaning and preparation using spreadsheets, SQL, and R programming</li>
+                    <li>Descriptive statistics, hypothesis testing, and regression analysis</li>
+                    <li>Data visualization using Tableau, Data Studio, and R</li>
+                    <li>R programming for data manipulation and statistical analysis</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Python for Data Science 101</td>
+                <td>August 21, 2023</td>
+                <td>IBM</td>
+                <td>IBM (Online)</td>
+                <td>
+                  <ul>
+                    <li>Python (Programming Language)</li>
+                    <li>Data Analysis</li>
+                    <li>NumPy</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
